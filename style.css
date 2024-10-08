@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+
+}
+.galeria{
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    gap: 0.1px;
+
+}
+.galeria div{
+    flex: 2;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.galeria div:hover{
+    flex: 7;
+    filter: saturate(90%);
+}
+.galeria:hover div:not(:hover){
+    filter: opacity(50%);
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+
+    
+}
